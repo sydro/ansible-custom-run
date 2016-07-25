@@ -1,0 +1,9 @@
+- hosts: all
+  tasks:
+  - include: test_include.yml
+  - name: Test task 1
+    shell: ls
+  - name: Test task 2
+    shell: ls -l
+  - name: Test task 3
+    shell: ls -lh
